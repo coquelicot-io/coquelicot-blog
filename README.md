@@ -50,9 +50,9 @@ In debug mode:
 DEBUG=* npx eleventy
 ```
 
-To build 
+To build
 ```
 npm run build
 ```
 
-This repository will auto deploy to Netlify.
+To deploy, upload the "_site" folder to Netlify after building changes locally.
