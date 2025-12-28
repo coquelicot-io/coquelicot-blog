@@ -23,6 +23,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('page', 'layouts/page')
   eleventyConfig.addLayoutAlias('article', 'layouts/article')
+  eleventyConfig.addLayoutAlias('clean', 'layouts/clean')
 
   eleventyConfig.addPassthroughCopy('./src/favicon.ico')
   eleventyConfig.addPassthroughCopy('./src/assets/fonts')

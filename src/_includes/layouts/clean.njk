@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHFBQZP08X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LHFBQZP08X');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or metadata.title }}</title>
+
+    <script type="module" src="/assets/svg-icon-sprite.js"></script>
+    <meta name="google-site-verification" content="7GQV55M7lLs7e1DBGJOuMjxGolMkvSoK7sZnnIMoBZc" />
+    <meta name="facebook-domain-verification" content="wg6f3quzv3sqff5b79dins8vah4gyz" />
+    {% seo "" %}
+  </head>
+
+  <body class="page-layout page--{{ page.fileSlug or 'home' }}">
+    <main class="page-layout__main" role="main">
+      {{ content | safe }}
+    </main>
+    <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+    <script type="text/javascript">window.Beacon('init', '9a96911b-bd72-4e2b-ab64-e4fed41efe28')</script>
+  </body>
+</html>
